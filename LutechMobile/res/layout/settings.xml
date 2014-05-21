@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray" ><!--  #fec444-  -->
+
+    <TextView android:id="@+id/txtTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title"
+        android:text="Settings"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" 
+        android:padding="3dp"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout android:id="@+id/p1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:layout_margin="1px" 
+    android:layout_below="@+id/txtTitle"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+    <TextView android:id="@+id/txtTimeZoneName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:text="test" 
+        android:padding="3dp"
+        android:textSize="20sp"/>
+    
+    <TextView android:id="@+id/txtCurrentTime"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="test" android:padding="3dp"
+         android:textSize="20sp"/>
+
+</RelativeLayout>
+<LinearLayout android:id="@+id/parentMoreTimeZones"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/p1"
+    android:orientation="vertical">
+    
+</LinearLayout>
+<Button android:id="@+id/btnAddMore"
+    	android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Add more timezones..."
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:padding="8dp"/>
+</RelativeLayout>

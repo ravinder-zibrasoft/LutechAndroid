@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:layout_margin="1dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+    <TextView android:id="@+id/txtTimeZoneName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:text="test" 
+        android:padding="3dp"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:maxLength="24"/>
+    
+    <TextView android:id="@+id/txtCurrentTime"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_toLeftOf="@+id/imgDelete"
+        android:layout_centerHorizontal="true"
+        android:text="test" android:padding="3dp"
+         android:textSize="20sp"/>
+  
+    <ImageView android:id="@+id/imgDelete"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="test" android:padding="3dp"
+         android:textSize="20sp"
+         android:layout_margin="3dp"
+         android:background="@drawable/delete_button_selector"/>
+
+</RelativeLayout>

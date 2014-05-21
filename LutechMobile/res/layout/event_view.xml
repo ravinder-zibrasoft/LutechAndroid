@@ -1,0 +1,5 @@
+<com.lutechmobile.view.EventView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventview"
+    android:layout_width="50dp"
+    android:layout_height="200dp" />
